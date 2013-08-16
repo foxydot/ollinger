@@ -1,0 +1,73 @@
+    /*------------------------------------------------------------------------*/
+    
+    /* STYLES FOR Influx - Video */
+    
+    /*------------------------------------------------------------------------*/
+    
+    a.influx-video {
+    	display: block;
+    	width: 675px;
+    	height: 379px;
+    	overflow: hidden;
+    }
+	
+	a.influx-video span.largePlay{
+		background:url(img/start.png);
+		display:block;
+		width:84px;
+		height:84px;
+		position:absolute;
+		top:0;
+		left:0;
+		text-indent:-9999px;
+		cursor:pointer;
+		z-index:1;
+	}
+	
+	a.influx-video:hover span.largePlay{
+		background-position: 0 -84px;
+	}
+    
+    /*------------------------------------------------------------------------*/
+    
+    /* STYLES FOR Local Video Player */
+    
+    /*------------------------------------------------------------------------*/
+	
+	
+	
+	.pppause,
+	.ppplay:hover,
+	.ppplay:active,
+	.pppause:hover,
+	.pppause:active,
+	.ppscrubber,
+	.pptimeleft,
+	.ppvmax,
+	.ppvmax:hover,
+	.ppvmax:active,
+	.ppmute,
+	.ppvslider,
+	.ppvmarker, 
+	.ppnext,
+	.ppprev,
+	.ppnext:hover,
+	.ppprev:hover,
+	.ppprev:active{
+		background-image:url(img/light.png) !important;
+	}
+	
+	.ppplayhead,
+	.pploaded{
+		background-color:#fff !important;
+	}
+	
+	.pploaded{
+		opacity: 0.5 !important;
+	}
+	
+	/*time readout text*/
+	.pptimeleft span{
+		font-size:10px;
+		color:#bbb;
+	}

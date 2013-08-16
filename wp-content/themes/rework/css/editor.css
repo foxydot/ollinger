@@ -1,0 +1,72 @@
+blockquote {
+	font-style:italic;
+}
+
+blockquote .person {
+    color: #333333;
+    font-style: normal;
+}
+
+blockquote .accent {
+    color: #D73300;
+}
+
+.check li, 
+.check-bold li, 
+.arrow li, 
+.arrow-bold li, 
+.square li, 
+.circle li {
+	padding-left: 20px;
+    list-style: none outside none;
+    margin: 0;
+}
+
+
+.check li{
+background: url("../images/list_check.png") no-repeat scroll 2px 53% transparent;
+}
+
+.check-bold li {
+    background: url("../images/list_check_bold.png") no-repeat scroll 1px 53% transparent;
+}
+
+.arrow li {
+    background: url("../images/list_arrow.png") no-repeat scroll 4px 53% transparent;
+}
+
+.arrow-bold li {
+    background: url("../images/list_arrow_bold.png") no-repeat scroll 3px 53% transparent;
+}
+
+.square li {
+    background: url("../images/list_square.png") no-repeat scroll 4px 53% transparent;
+}
+
+.circle li {
+    background: url("../images/list_circle.png") no-repeat scroll 4px 53% transparent;
+}
+
+.success, .notice, .warning, .error {
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 6px 15px;
+}
+
+.success {
+    background: none repeat scroll 0 0 #93B336;
+}
+
+.notice {
+    background: none repeat scroll 0 0 #507CC3;
+}
+
+.warning {
+    background: none repeat scroll 0 0 #FFBB00;
+}
+
+.error {
+    background: none repeat scroll 0 0 #D73300;
+}

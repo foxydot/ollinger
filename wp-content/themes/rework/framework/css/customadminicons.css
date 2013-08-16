@@ -1,0 +1,84 @@
+
+/*custom wp admin menu icons*/
+
+/*galleries*/
+
+#adminmenu #menu-posts-gallery div.wp-menu-image{
+  background:url(../images/admin_icon_galleries.png) no-repeat 5px -18px !important;
+}
+
+#adminmenu #menu-posts-gallery:hover div.wp-menu-image {
+  background-position:5px 6px !important;
+}
+
+
+/*videos*/
+
+#adminmenu #menu-posts-video div.wp-menu-image{
+  background:url(../images/admin_icon_videos.png) no-repeat 5px -18px !important;
+}
+
+#adminmenu #menu-posts-video:hover div.wp-menu-image {
+  background-position:5px 6px !important;
+}
+
+
+
+/*projects*/
+
+#adminmenu #menu-posts-project div.wp-menu-image{
+  background:url(../images/admin_icon_projects.png) no-repeat 5px -18px !important;
+}
+
+#adminmenu #menu-posts-project:hover div.wp-menu-image {
+  background-position:5px 6px !important;
+}
+
+
+
+/*testimonials*/
+
+#adminmenu #menu-posts-testimonial div.wp-menu-image{
+  background:url(../images/admin_icon_testimonial.png) no-repeat 5px -18px !important;
+}
+
+#adminmenu #menu-posts-testimonial:hover div.wp-menu-image {
+  background-position:5px 6px !important;
+}
+
+
+
+/*Pricing Tables*/
+
+#adminmenu #menu-posts-ptable div.wp-menu-image{
+  background:url(../images/admin_icon_pricing.png) no-repeat 5px -18px !important;
+}
+
+#adminmenu #menu-posts-ptable:hover div.wp-menu-image {
+  background-position:5px 6px !important;
+}
+
+
+
+/*Staff Member*/
+
+#adminmenu #menu-posts-staff div.wp-menu-image{
+  background:url(../images/admin_icon_staff.png) no-repeat 5px -18px !important;
+}
+
+#adminmenu #menu-posts-staff:hover div.wp-menu-image {
+  background-position:5px 6px !important;
+}
+
+
+
+/*Services*/
+
+#adminmenu #menu-posts-service div.wp-menu-image{
+  background:url(../images/admin_icon_service.png) no-repeat 5px -18px !important;
+}
+
+#adminmenu #menu-posts-service:hover div.wp-menu-image {
+  background-position:5px 6px !important;
+}
+
