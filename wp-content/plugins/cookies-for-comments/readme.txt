@@ -1,8 +1,8 @@
 === Cookies for Comments ===
 Contributors: donncha, automattic
 Tags: cookies, comments, spam
-Tested up to: 3.2
-Stable tag: 0.5.4
+Tested up to: 3.5.2
+Stable tag: 0.5.5
 Requires at least: 3.1
 
 Sets a cookie on a random URL that is then checked when a comment is posted. If the cookie is missing the comment is marked as spam. This plugin will reduce your comment spam by at least 90%, probably.
@@ -24,7 +24,15 @@ If you use WordPress MU, replace wp-comments-post.php above with wp-signup.php t
 == Installation ==
 Copy into your plugins folder and activate. If you are using a caching plugin such as [WP Super Cache](http://ocaoimh.ie/wp-super-cache/) make sure you clear the cache after enabling this plugin.
 
+== Upgrade Notice ==
+
+= 0.5.5 =
+Cookie key name sanitized before the cookie is set.
+
 == Changelog ==
+
+= 0.5.5 =
+* Sanitize the cookie key before setting it. Props Matt Cutts and @planetzuda
 
 = 0.5.4 =
 * Added a rejection message for when people trip over the cookie protection.

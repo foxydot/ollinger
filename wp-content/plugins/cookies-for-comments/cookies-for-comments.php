@@ -3,7 +3,7 @@
 Plugin Name: Cookies for Comments
 Plugin URI: http://ocaoimh.ie/cookies-for-comments/
 Description: Sets a cookie that must exist for a comment to be allowed through
-Version: 0.5.4
+Version: 0.5.5
 Author: Donncha O Caoimh
 Author URI: http://ocaoimh.ie/
 
@@ -33,7 +33,7 @@ function cfc_img_html() {
 	if ( $cfc_key == '' )
 		return false;
 
-	?><img src="<?php echo plugins_url( "css.php?k={$cfc_key}&amp;o=i&amp;t=" . mt_rand(), __FILE__ ); ?>" width='1' height='1' /><?php
+	?><img alt='css.php' src="<?php echo plugins_url( "css.php?k={$cfc_key}&amp;o=i&amp;t=" . mt_rand(), __FILE__ ); ?>" width='1' height='1' /><?php
 }
 if ( get_option( 'cfc_delivery' ) == 'css' ) {
 	add_action( 'wp_head', 'cfc_stylesheet_html' );

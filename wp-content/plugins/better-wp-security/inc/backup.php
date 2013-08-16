@@ -89,7 +89,7 @@ if ( ! class_exists( 'bwps_backup' ) ) {
 					for( $j=0; $j < $num_fields; $j++ ) {
 							
 						$row[$j] = addslashes( $row[$j] );
-						$row[$j] = ereg_replace( PHP_EOL, "\n", $row[$j] );
+						$row[$j] = preg_replace( '#' . PHP_EOL . '#', "\n", $row[$j] );
 								
 						if ( isset( $row[$j] ) ) { 
 							$return .= '"' . $row[$j] . '"' ; 
@@ -174,16 +174,19 @@ if ( ! class_exists( 'bwps_backup' ) ) {
 				
 				$count = 0;
 				
-				foreach ( $files as $file ) {
-					if ( strstr( $file, 'database-backup' ) ) {
-						if ( $count >= $bwpsoptions['backups_to_retain'] ) {
-							@unlink( BWPS_PP . 'backups/' . $file );
+				if( is_array( $files ) && count( $files ) > 0 ) {
+					foreach ( $files as $file ) {
+						if ( strstr( $file, 'database-backup' ) ) {
+							if ( $count >= $bwpsoptions['backups_to_retain'] ) {
+								@unlink( BWPS_PP . 'backups/' . $file );
+							}
+							$count++;
 						}
-						$count++;
+							
 					}
-						
+					
 				}
-				
+
 			}
 				
 		}

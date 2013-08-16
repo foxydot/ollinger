@@ -1,6 +1,10 @@
 <?php
-if ( !isset( $_COOKIE[ $_GET[ 'k' ] ] ) || ( isset( $_COOKIE[ $_GET[ 'k' ] ] ) && $_COOKIE[ $_GET[ 'k' ] ] == 1 ) )
-	@setcookie( $_GET[ 'k' ], time(), time()+604800, '/' );
+if ( isset( $_GET[ 'k' ] ) ) {
+	$k = preg_replace( "/[^[:alnum:]]/i", "", $_GET[ 'k' ] );
+	if ( !isset( $_COOKIE[ $k ] ) || ( isset( $_COOKIE[ $k ] ) && $_COOKIE[ $k ] == 1 ) )
+		@setcookie( $k, time(), time()+604800, '/' );
+}
+
 if ( isset( $_GET[ 'o' ] ) ) {
 	header("Content-type: image/gif");
 	readfile( './blank.gif' );
