@@ -49,10 +49,10 @@ jQuery(document).ready(function($) {
 	}
 	
 	var tabs = $(".pe_theme #options_tabs");
-	if (parseFloat($.ui.version.match(/\d.\d/)[0]) >= 1.9) {
+	//if (parseFloat($.ui.version.match(/\d.\d/)[0]) >= 1.9) {
 		tabs.find("> ul li").removeClass("ui-tabs-selected");
 		tabs.find("> div").removeClass("ui-tabs-hide");
-	}
+	//}
 	tabs.tabs();
 	
 	
