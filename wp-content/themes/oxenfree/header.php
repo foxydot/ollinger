@@ -50,7 +50,6 @@ $t =& peTheme();
     <div id="header" class="container clearfix">
 
         <a href="<?php echo home_url(); ?>" id="logo"><img src="<?php echo $t->options->get("logo") ?>" alt="logo" /></a>
-		BLOG BUTTON
 		<!--main nav-->
 		<?php $t->menu->show("main"); ?>
 		
