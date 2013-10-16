@@ -1,7 +1,14 @@
 .home h1.page-title{display:none}
 #header #logo{padding-top:30px}
-h1.page-title-inner{padding-top:0;margin-bottom:40px}
+h1.page-title-inner{padding-top:0;margin-bottom:40px}h1.page-title-inner strong{font-weight:300 !important;color:#d73300}
 #content p,#content li,#content .one-half{font-size:14px}
 #content>ul{margin:0 0 1em 2em}#content>ul li{list-style:square inside none}
 .team-member .member-info{width:25%;float:left;border:0;padding-top:0}.team-member .member-info .member-social{margin:.5em 0;padding:.5em;border:1px solid #f0f0f0}
 .team-member:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
+.single-project h3.subtitle{text-transform:none;color:#fff;background:#d73300;margin:.5em 0;padding:.5em}
+.single-project .single-project-wrapper{margin-top:45px}
+.single-project .image-slider .flex-direction-nav a{top:-35px;height:30px;opacity:1;line-height:2.2em}
+.single-project .image-slider .flex-direction-nav a.flex-prev{text-indent:35px}
+.single-project .image-slider .flex-direction-nav a.flex-next{text-indent:-35px}
+.single-project .image-slider .flex-caption{position:relative;width:auto;top:0;padding:1em}
+.single-project .image-slider .slides li{background-color:#f0f0f0}.single-project .image-slider .slides li img{width:80%;margin:3em auto}

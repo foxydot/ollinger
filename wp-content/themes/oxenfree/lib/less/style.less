@@ -11,6 +11,10 @@
 h1.page-title-inner{
   padding-top: 0;
   margin-bottom: 40px;
+  strong{ 
+    font-weight: 300 !important;
+    color:#D73300;
+  }
 }
 #content{
   p,li,.one-half{
@@ -41,4 +45,48 @@ h1.page-title-inner{
   visibility: hidden;
   line-height: 0;
   height: 0;
+}
+
+.single-project{
+  h3.subtitle{
+    text-transform: none;
+    color: #ffffff;
+    background: #D73300;
+    margin: 0.5em 0;
+    padding: 0.5em;
+  }
+  .single-project-wrapper{
+    margin-top: 45px;
+  }
+  .image-slider{
+    .flex-direction-nav{
+      a{
+        top: -35px;
+        height: 30px;
+        opacity: 1;
+        line-height: 2.2em;
+      }
+      a.flex-prev{
+        text-indent: 35px;
+      }
+      a.flex-next{
+        text-indent: -35px;
+      }
+    }
+    .flex-caption{
+      position: relative;
+      width: auto;
+      top: 0;
+      padding: 1em;
+    }
+    .slides{
+      li{
+        background-color: #F0F0F0;
+        img{
+          width: 80%;
+          margin: 3em auto;
+        }
+      }
+    }
+  }
 }

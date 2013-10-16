@@ -1,5 +1,8 @@
 <?php $t =& peTheme(); ?>
 <?php $content =& $t->content; ?>
+<?php $meta =& $t->content->meta(); 
+
+    $tagline = $meta->tagline->content;?>
 <?php get_header(); ?>
 <?php get_template_part("common","tagline"); ?>
 
@@ -10,6 +13,7 @@
 <div id="main">
 
 	<h1 class="capitalize"><?php $content->title(); ?></h1>
+	<h3 class="subtitle"><?php echo $tagline ?></h3>
 	<div class="single-project-wrapper <?php echo $content->format(); ?>">
 		<?php switch ($content->format()): case "video": ?>
 		<?php get_template_part("intro-post","video"); ?>
