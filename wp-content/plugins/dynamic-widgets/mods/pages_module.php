@@ -2,7 +2,7 @@
 /**
  * Pages Module
  *
- * @version $Id: pages_module.php 577792 2012-07-26 18:09:15Z qurl $
+ * @version $Id: pages_module.php 689417 2013-03-31 09:16:14Z qurl $
  * @copyright 2011 Jacco Drabbe
  */
 
@@ -111,7 +111,14 @@
 					} else {
 						$childs = $opt_tax_childs->act;
 					}
-					DW_CustomPost::prtTax($tax_type->name, $tree, $opt_tax->act, $childs, 'page-tax_' . $tax_type->name);
+
+					echo '<input type="hidden" id="page-tax_' . $tax_type->name . '_act" name="page-tax_' . $tax_type->name . '_act" value="' . implode(',', $opt_tax->act) . '" />';
+					if ( isset($opt_tax_childs) ) {
+						echo '<input type="hidden" id="page-tax_' . $tax_type->name . '_childs_act" name="page-tax_' . $tax_type->name . '_childs_act" value="' . implode(',', $opt_tax_childs->act) . '" />';
+					}
+
+					// DW_CustomPost::prtTax($tax_type->name, $tree, $opt_tax->act, $childs, 'page-tax_' . $tax_type->name);
+					DW_CustomPost::prtTax($widget_id, $tax_type->name, $tree, $opt_tax->act, $childs, 'page-tax_' . $tax_type->name);
 					echo '</div>';
 					echo '</div>';
 				}
