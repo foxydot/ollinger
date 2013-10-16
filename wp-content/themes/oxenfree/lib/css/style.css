@@ -1,5 +1,7 @@
 .home h1.page-title{display:none}
 #header #logo{padding-top:30px}
 h1.page-title-inner{padding-top:0;margin-bottom:40px}
-#content p,#content li{font-size:1.2em}
-#content ul{margin:0 0 1em 2em}#content ul li{list-style:square inside none}
+#content p,#content li,#content .one-half{font-size:14px}
+#content>ul{margin:0 0 1em 2em}#content>ul li{list-style:square inside none}
+.team-member .member-info{width:25%;float:left;border:0;padding-top:0}.team-member .member-info .member-social{margin:.5em 0;padding:.5em;border:1px solid #f0f0f0}
+.team-member:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
