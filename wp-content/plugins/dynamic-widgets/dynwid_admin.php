@@ -2,7 +2,7 @@
 /**
  * dynwid_admin.php - Startpage for admin
  *
- * @version $Id: dynwid_admin.php 580343 2012-08-01 17:34:38Z qurl $
+ * @version $Id: dynwid_admin.php 689417 2013-03-31 09:16:14Z qurl $
  * @copyright 2011 Jacco Drabbe
  */
 ?>
@@ -52,7 +52,7 @@ I also provide other services. See <a href="<?php echo DW_URL_AUTHOR; ?>/service
 		require_once(dirname(__FILE__) . $dw_admin_script);
 	} else {
 		echo '<div class="error" id="message"><p>';
-		_e('Oops! Something went terrible wrong. Please reinstall Dynamic Widgets.', DW_L10N_DOMAIN);
+		_e('Oops! Something went horribly wrong. Please reinstall Dynamic Widgets.', DW_L10N_DOMAIN);
 		echo '</p></div>';
 	}
 ?>

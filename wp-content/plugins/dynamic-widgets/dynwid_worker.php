@@ -2,7 +2,7 @@
 /**
  * dynwid_worker.php - The worker does the actual work.
  *
- * @version $Id: dynwid_worker.php 618242 2012-10-28 14:00:39Z qurl $
+ * @version $Id: dynwid_worker.php 786312 2013-10-11 07:53:53Z qurl $
  * @copyright 2011 Jacco Drabbe
  */
 
@@ -14,7 +14,7 @@
 	DWModule::registerPlugin(DW_CustomPost::$plugin);
 
 	// Template
-	if (! is_archive() ) {
+	if (! is_archive() && ! is_404() ) {
 		$tpl = get_page_template();
 		if ( $DW->whereami == 'pods' ) {
 			global $pod_page_exists;
@@ -59,7 +59,6 @@
               $DW->message('Default for ' . $widget_id . ' set to FALSE (rule D1)');
               $display = FALSE;
               $other = TRUE;
-              break;
             } else if (! in_array($condition->maintype, $DW->overrule_maintype) ) {
               // Get default value
               if ( $condition->name == 'default' ) {
@@ -182,6 +181,7 @@
           			$other_url = ( $url ) ? FALSE : TRUE;
           			foreach ( $urls as $u ) {
           				$u = $DW->getURLPrefix() . $u;
+          				$DW->message('URL matching: ' . $u);
           				$like_start = substr($u, 0, 1);
           				$like_end = substr($u, -1);
 
@@ -380,6 +380,13 @@
                   // Get the tags form the post
                   if ( has_tag() ) {
                     $tags = get_the_tags();
+                    
+                    /* For some reason WP reports the post has tags, but then returns not an array with tags. 
+                    Maybe because it's not in the loop anymore? */
+                    if (! is_array($tags) ) {
+                    	$tags = array();
+                    }
+                    
                     foreach ( $tags as $tag ) {
                       $post_tag[ ] = $tag->term_id;
                     }
@@ -641,7 +648,8 @@
 
                     $id = get_query_var('cat');
                     $DW->message('CatID: ' . $id);
-                    if ( $DW->wpml ) {
+
+					if ( DW_WPML::detect(FALSE) ) {					
                       $id = DW_WPML::getID($id, 'tax_category');
                       $DW->message('WPML ObjectID: ' . $id);
                     }
