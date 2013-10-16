@@ -13,10 +13,32 @@ h1.page-title-inner{
   margin-bottom: 40px;
 }
 #content{
-  p,li{
-    font-size: 1.2em;
+  p,li,.one-half{
+    font-size: 14px;
   }
-  ul{margin: 0 0 1em 2em;
+}
+#content>ul{margin: 0 0 1em 2em;
     li {list-style: square inside none;}
   }
+.team-member{
+  .member-info{
+    width: 25%;
+    float: left;
+    border:0;
+    padding-top: 0;
+    .member-social{
+      margin: 0.5em 0;
+      padding: 0.5em;
+      border: 1px solid #F0F0F0;
+    }
+  }
+}
+
+.team-member:after{
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
