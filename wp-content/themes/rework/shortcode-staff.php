@@ -18,8 +18,8 @@
 			<?php if ($link = $meta->info->linkedin): ?>
 			<li><a href="<?php echo $link ?>">LinkedIn</a></li>
 			<?php endif; ?>
-			<?php if ($link = $meta->info->facebook): ?>
-			<li><a href="<?php echo $link ?>">facebook</a></li>
+			<?php if ($link = $meta->info->email): ?>
+			<li><a href="mailto:<?php echo $link ?>">email</a></li>
 			<?php endif; ?>
 		</ul>
 	</div>

@@ -1,1 +1,5 @@
+.home h1.page-title{display:none}
 #header #logo{padding-top:30px}
+h1.page-title-inner{padding-top:0;margin-bottom:40px}
+#content p,#content li{font-size:1.2em}
+#content ul{margin:0 0 1em 2em}#content ul li{list-style:square inside none}

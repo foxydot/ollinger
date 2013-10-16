@@ -63,9 +63,9 @@ class PeThemeStaff {
 							  "type"=>"Text",
 							  "default"=>""
 							  ),
-						"facebook" => 	
+						"email" => 	
 						array(
-							  "label"=>__pe("Facebook Link"),
+							  "label"=>__pe("Email Address"),
 							  "type"=>"Text",
 							  "default"=>""
 							  )
