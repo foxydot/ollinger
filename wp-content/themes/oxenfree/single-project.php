@@ -44,11 +44,10 @@
 	<div class="clear"></div>
 
 	<div class="widget short">
-		<h5><?php e__pe("Overview"); ?></h5>
 		<?php $content->content(); ?>
 	</div>
 
-	<?php if (($features = $project->features) && count($features) > 0): ?>
+	<?php/* if (($features = $project->features) && count($features) > 0): ?>
 	<div class="widget short">
 	 <?php if ($project->list_title) echo "<h5>{$project->list_title}</h5>"; ?>
 		<ul class="check-bold compressed">
@@ -57,7 +56,7 @@
 			<?php endforeach; ?>
 		</ul>
 	</div>
-	<?php endif; ?>
+	<?php endif; */?>
 
 	<?php if ($project->button_label): ?>
 	<a href="<?php echo $project->button_link; ?>"><input type="button" value="<?php echo $project->button_label; ?>" class="red" /></a>
