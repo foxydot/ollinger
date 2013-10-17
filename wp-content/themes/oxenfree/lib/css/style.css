@@ -1,5 +1,4 @@
-.home h1.page-title{display:none}
-#header #logo{padding-top:30px}
+#header #logo{padding-top:30px;height:65px}
 h1.page-title-inner{padding-top:0;margin-bottom:40px}h1.page-title-inner strong{font-weight:300 !important;color:#d73300}
 #content p,#content li,#content .one-half{font-size:14px}
 #content>ul{margin:0 0 1em 2em}#content>ul li{list-style:square inside none}
@@ -14,3 +13,4 @@ h1.page-title-inner{padding-top:0;margin-bottom:40px}h1.page-title-inner strong{
 .single-project .image-slider .flex-direction-nav a.flex-next{text-indent:-35px}
 .single-project .image-slider .flex-caption{position:relative;width:auto;top:0;padding:1em}
 .single-project .image-slider .slides li{background-color:#f0f0f0}.single-project .image-slider .slides li img{width:80%;margin:3em auto}
+.home h1.page-title{display:none}
